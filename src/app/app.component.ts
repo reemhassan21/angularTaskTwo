@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'task';
+  arr:{Name:string, Age:number}[]= []
+  getData(data:any){
+    this.arr = data
+    console.log(this.arr)
+  }
 }
